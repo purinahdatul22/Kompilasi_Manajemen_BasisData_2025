@@ -77,41 +77,54 @@ dan mengamankan akses root membantu mencegah masalah umum serta mempermudah trou
 Konfigurasi pada MySQL
 a.   port dari default 3306 menjadi 3309
 −    Masuk ke mysql menggunakan command prompt
- ![1](https://github.com/user-attachments/assets/20fbd5c4-c540-46a9-8e60-5dee0951794f)
+ ![image](https://github.com/user-attachments/assets/ea42ffe9-8834-4923-8a72-c3616e1bd85d)
  
 −    Cek port menggunakan show variables like ‘port’; (before)
-  ![2](https://github.com/user-attachments/assets/10922aba-44ce-4ab0-b92d-89b46606a087)
+![image](https://github.com/user-attachments/assets/62666f6b-c523-4133-95f4-7767ab6d8a9e)
+
 −    Letak my.ini <br>
- ![3](https://github.com/user-attachments/assets/0b789dc6-2d36-4daf-a87a-fd902257d9e5)
- ![4](https://github.com/user-attachments/assets/cc725e18-cf02-431a-af92-3e137771b343)
+![image](https://github.com/user-attachments/assets/e9cf1d75-ef37-46b7-88cd-dddbe7d95b53)
+
+![image](https://github.com/user-attachments/assets/4b249dd7-6245-475a-a377-4c67045ad228)
+
 −    Buka my.ini lalu cari port 3306
-![5](https://github.com/user-attachments/assets/92f3843c-f991-4e66-afec-729c44660893)
-−    Sebelum ganti port menjadi 3309, stop mysql terlebih dahulu di Terminal
-Admin
-![6](https://github.com/user-attachments/assets/9bd5a205-0040-4436-82d6-e904b70b40a8)
+
+![image](https://github.com/user-attachments/assets/3473fe24-e81c-4725-8904-fbc72d2fc246)
+
+−    Sebelum ganti port menjadi 3309, stop mysql terlebih dahulu di Terminal Admin
+![image](https://github.com/user-attachments/assets/edcbb942-14ac-4b71-a83e-bd1a8b7269e4)
+
 - Setelah itu ubah port <br>
-![7](https://github.com/user-attachments/assets/9a4ff273-7774-4838-9e57-3b53f20a1cae)
+![image](https://github.com/user-attachments/assets/d9fd463e-d68d-4389-a670-e653730fd56a)
+
 -    Setelah port diubah, jalan kan lagi mysql di Terminal Admin
-![8](https://github.com/user-attachments/assets/48893f4b-9ae9-4784-b81e-bdeba06f0060)
+![image](https://github.com/user-attachments/assets/186b6a41-3e25-40e2-87a2-c2c45d09921c)
+
 −    Kemudian jalankan lagi untuk cek port yang telah diubah (After)
-![9](https://github.com/user-attachments/assets/91f199f8-6ffa-492c-be65-782ba3173c20)
+![image](https://github.com/user-attachments/assets/9002d413-90a8-4dff-867e-f6730bdcaf0c)
+
 b.   innodb_buffer_pool_size dr default 16M (menjadi 25% dari RAM )
 −    Cara untuk mengubah innodb sama seperti mengubah port, jadi cari innodb
- ![10](https://github.com/user-attachments/assets/fa944ad9-f4c0-4fae-95a3-502b8997bbe3)
+
+![image](https://github.com/user-attachments/assets/9a0794ee-7c76-411a-8f11-d7542c26e34a)
+
 
 -  Kemudian sesuai dengan kapasitas RAM Laptop masing masing
-   ![11](https://github.com/user-attachments/assets/b2615da0-1d2f-42c6-bfaf-bc1eaf4064f4)
+![image](https://github.com/user-attachments/assets/643e9482-158d-4d5e-967d-53a2c159daff)
+
 
 -	Cek innodb dengan SHOW VARIABLES LIKE 'innodb_buffer_pool_size'; di command prompt (Before)
-![12](https://github.com/user-attachments/assets/e7ec9c2b-0526-4b91-bbf0-146eb5e86605)
+![image](https://github.com/user-attachments/assets/fe9743e3-046d-4b2e-b662-daa61b8c5c37)
+
 −    Cek innodb setelah innodb diubah (Ater)
-![13](https://github.com/user-attachments/assets/d6cee0c2-9e75-411c-86ae-d99c8c14420d)
+![image](https://github.com/user-attachments/assets/d64d5710-913e-473e-9091-bab2e4a635fa)
 
 6.   lakukan perubahan terhadap password root.
-![14](https://github.com/user-attachments/assets/6256e2dc-5a58-44d4-bc9c-95054d333fec)
+![image](https://github.com/user-attachments/assets/7a9d5875-a1ae-4072-b80f-9f2dab064877)
 
 7.   Buat database dengan nama: kelompok_AB_nama_mhs
-![16](https://github.com/user-attachments/assets/2a302a12-7ee9-4f9a-bd82-406581c599da)
+![image](https://github.com/user-attachments/assets/400e36d4-d116-4d49-a488-941a88ec2ece)
+
 
 ## 7. Sumber Referensi
 - https://bif.telkomuniversity.ac.id/apa-itu-mysql/
